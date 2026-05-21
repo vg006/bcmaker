@@ -393,7 +393,7 @@ func TestBuildTitledBar_LeftAlignedWithEmojiFill(t *testing.T) {
 	rightW := hw
 	lineWidth := hw*20 + leftW + rightW
 
-	bar := buildTitledBar(left, fill, right, leftW, rightW, lineWidth, hw, title)
+	bar := buildTitledBar(left, fill, right, leftW, rightW, lineWidth, hw, title, Left)
 	if w := runewidth.StringWidth(ansi.Strip(bar)); w != lineWidth {
 		t.Fatalf("expected bar visual width %d, got %d", lineWidth, w)
 	}
