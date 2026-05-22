@@ -57,6 +57,18 @@
 //	box.Top
 //	box.Bottom
 //
+// Title alignment is controlled with TitleAlign and the AlignType constants.
+// When TitlePosition is Inside, it aligns the title within the box; when
+// TitlePosition is Top or Bottom, it aligns the title on the border. Inside
+// defaults to Center, Top/Bottom default to Left.
+//
+//	box.Left
+//	box.Center
+//	box.Right
+//
+// When TitleAlign is set, leading and trailing whitespace in the title is
+// trimmed so alignment controls positioning.
+//
 // Content alignment is controlled with ContentAlign and the AlignType
 // constants:
 //

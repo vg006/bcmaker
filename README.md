@@ -20,7 +20,7 @@ Box CLI Maker is a Go library for rendering highly customizable boxes in the ter
 - 9 built‑in styles (Single, Double, Round, Bold, SingleDouble, DoubleSingle, Classic, Hidden, Block)
 - Custom glyphs for all corners and edges
 - Title positions: Inside, Top, Bottom
-- Content alignment: Left, Center, Right
+- Title & Content alignment: Left, Center, Right
 - Optional content wrapping with `WrapContent` and `WrapLimit`
 - Color support with:
   - First 16 ANSI color names
@@ -198,6 +198,14 @@ b.TitlePosition(box.Top)
 b.TitlePosition(box.Bottom)
 ```
 
+Title alignment:
+
+```go
+b.TitleAlign(box.Left) // default for box.Top/box.Bottom Position
+b.TitleAlign(box.Center) // default for box.Inside Position
+b.TitleAlign(box.Right)
+```
+
 #### Title position showcase
 
 <details>
@@ -353,6 +361,7 @@ The [examples](examples) directory contains small, focused programs that showcas
 - `content_align` – compare `Left`, `Center`, and `Right` content alignment.
 - `content_wrap` – demonstrate `WrapContent` / `WrapLimit` with long text.
 - `title_positions` – show `Inside`, `Top`, and `Bottom` title placement.
+- `title_alignments` – compare `Left`, `Center`, and `Right` title alignment.
 - `box_styles` – render all built‑in border styles and colors.
 - `custom_box` – build boxes using fully custom corner/edge glyphs.
 - `ansi_styles_and_links` – use bold/underline/blink/strikethrough and OSC 8 hyperlinks.
