@@ -240,96 +240,78 @@ b.TitleAlign(box.Right)
 <details>
 <summary><code>box.Left</code></summary>
 
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Inside</code></summary>
+> <details>
+> <summary><code>box.Inside</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/inside_left.png" alt="inside left" width="500"/>
+> </p>
+> </details>
 
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/inside_left.png" alt="inside left" width="500"/>
-</p>
+> <details>
+> <summary><code>box.Top</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/top.png" alt="top left" width="500"/>
+> </p>
+> </details>
 
-</details>
-
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Top</code></summary>
-
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/top.png" alt="top left" width="500"/>
-</p>
-
-</details>
-
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Bottom</code></summary>
-
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/bottom.png" alt="bottom left" width="500"/>
-</p>
-
-</details>
+> <details>
+> <summary><code>box.Bottom</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/bottom.png" alt="bottom left" width="500"/>
+> </p>
+> </details>
 
 </details>
 
 <details>
 <summary><code>box.Center</code></summary>
 
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Inside</code></summary>
+> <details>
+> <summary><code>box.Inside</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/single.png" alt="inside center" width="500"/>
+> </p>
+> </details>
 
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/single.png" alt="inside center" width="500"/>
-</p>
+> <details>
+> <summary><code>box.Top</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/top_center.png" alt="top center" width="500"/>
+> </p>
+> </details>
 
-</details>
-
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Top</code></summary>
-
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/top_center.png" alt="top center" width="500"/>
-</p>
-
-</details>
-
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Bottom</code></summary>
-
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/bottom_center.png" alt="bottom center" width="500"/>
-</p>
-
-</details>
+> <details>
+> <summary><code>box.Bottom</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/bottom_center.png" alt="bottom center" width="500"/>
+> </p>
+> </details>
 
 </details>
 
 <details>
 <summary><code>box.Right</code></summary>
 
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Inside</code></summary>
+> <details>
+> <summary><code>box.Inside</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/inside_right.png" alt="inside right" width="500"/>
+> </p>
+> </details>
 
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/inside_right.png" alt="inside right" width="500"/>
-</p>
+> <details>
+> <summary><code>box.Top</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/top_right.png" alt="top right" width="500"/>
+> </p>
+> </details>
 
-</details>
-
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Top</code></summary>
-
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/top_right.png" alt="top right" width="500"/>
-</p>
-
-</details>
-
-<details style="margin-left: 1.5rem;">
-<summary><code>box.Bottom</code></summary>
-
-<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/bottom_right.png" alt="bottom right" width="500"/>
-</p>
-
-</details>
+> <details>
+> <summary><code>box.Bottom</code></summary>
+> <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+> <img src="img/bottom_right.png" alt="bottom right" width="500"/>
+> </p>
+> </details>
 
 </details>
 
