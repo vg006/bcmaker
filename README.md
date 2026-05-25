@@ -240,7 +240,7 @@ b.TitleAlign(box.Right)
 <details>
 <summary><code>box.Left</code></summary>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Inside</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -249,7 +249,7 @@ b.TitleAlign(box.Right)
 
 </details>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Top</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -258,7 +258,7 @@ b.TitleAlign(box.Right)
 
 </details>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Bottom</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -272,7 +272,7 @@ b.TitleAlign(box.Right)
 <details>
 <summary><code>box.Center</code></summary>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Inside</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -281,7 +281,7 @@ b.TitleAlign(box.Right)
 
 </details>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Top</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -290,7 +290,7 @@ b.TitleAlign(box.Right)
 
 </details>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Bottom</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -304,7 +304,7 @@ b.TitleAlign(box.Right)
 <details>
 <summary><code>box.Right</code></summary>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Inside</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -313,7 +313,7 @@ b.TitleAlign(box.Right)
 
 </details>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Top</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
@@ -322,7 +322,7 @@ b.TitleAlign(box.Right)
 
 </details>
 
-<details>
+<details style="margin-left: 1.5rem;">
 <summary><code>box.Bottom</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
