@@ -198,14 +198,6 @@ b.TitlePosition(box.Top)
 b.TitlePosition(box.Bottom)
 ```
 
-Title alignment:
-
-```go
-b.TitleAlign(box.Left) // default for box.Top/box.Bottom Title Position
-b.TitleAlign(box.Center) // default for box.Inside Title Position
-b.TitleAlign(box.Right)
-```
-
 #### Title Position showcase
 
 <details>
@@ -234,6 +226,14 @@ b.TitleAlign(box.Right)
 </p>
 
 </details>
+
+Title alignment:
+
+```go
+b.TitleAlign(box.Left) // default for box.Top/box.Bottom Title Position
+b.TitleAlign(box.Center) // default for box.Inside Title Position
+b.TitleAlign(box.Right)
+```
 
 #### Title Alignment showcase
 
