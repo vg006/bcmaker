@@ -92,7 +92,7 @@ Select a built‑in style:
 ```go
 b.Style(box.Double)
 ```
-#### Styles Showcase
+#### Styles showcase
 
 <details>
 <summary><code>box.Single</code></summary>
@@ -107,7 +107,7 @@ b.Style(box.Double)
 <summary><code>box.SingleDouble</code></summary>
 
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
-<img src="img/double_single.png" alt="double single" width="500"/>
+<img src="img/single_double.png" alt="single double" width="500"/>
 </p>
 
 </details>
@@ -201,12 +201,12 @@ b.TitlePosition(box.Bottom)
 Title alignment:
 
 ```go
-b.TitleAlign(box.Left) // default for box.Top/box.Bottom Position
-b.TitleAlign(box.Center) // default for box.Inside Position
+b.TitleAlign(box.Left) // default for box.Top/box.Bottom Title Position
+b.TitleAlign(box.Center) // default for box.Inside Title Position
 b.TitleAlign(box.Right)
 ```
 
-#### Title position showcase
+#### Title Position showcase
 
 <details>
 <summary><code>box.Inside</code></summary>
@@ -232,6 +232,104 @@ b.TitleAlign(box.Right)
 <p align="center" style="margin-top: 30px; margin-bottom: 20px;">
 <img src="img/bottom.png" alt="bottom" width="500"/>
 </p>
+
+</details>
+
+#### Title Alignment showcase
+
+<details>
+<summary><code>box.Left</code></summary>
+
+<details>
+<summary><code>box.Inside</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/inside_left.png" alt="inside left" width="500"/>
+</p>
+
+</details>
+
+<details>
+<summary><code>box.Top</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/top.png" alt="top left" width="500"/>
+</p>
+
+</details>
+
+<details>
+<summary><code>box.Bottom</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/bottom.png" alt="bottom left" width="500"/>
+</p>
+
+</details>
+
+</details>
+
+<details>
+<summary><code>box.Center</code></summary>
+
+<details>
+<summary><code>box.Inside</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/single.png" alt="inside center" width="500"/>
+</p>
+
+</details>
+
+<details>
+<summary><code>box.Top</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/top_center.png" alt="top center" width="500"/>
+</p>
+
+</details>
+
+<details>
+<summary><code>box.Bottom</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/bottom_center.png" alt="bottom center" width="500"/>
+</p>
+
+</details>
+
+</details>
+
+<details>
+<summary><code>box.Right</code></summary>
+
+<details>
+<summary><code>box.Inside</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/inside_right.png" alt="inside right" width="500"/>
+</p>
+
+</details>
+
+<details>
+<summary><code>box.Top</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/top_right.png" alt="top right" width="500"/>
+</p>
+
+</details>
+
+<details>
+<summary><code>box.Bottom</code></summary>
+
+<p align="center" style="margin-top: 30px; margin-bottom: 20px;">
+<img src="img/bottom_right.png" alt="bottom right" width="500"/>
+</p>
+
+</details>
 
 </details>
 
@@ -281,7 +379,7 @@ b.HPadding(px)    // horizontal only
 b.VPadding(py)    // vertical only
 ```
 
-Negative padding values are allowed to be set but cause `Render` to return an error.
+Setting negative padding causes `Render` to return an error.
 
 ### Wrapping
 
@@ -341,6 +439,7 @@ fmt.Println(out)
 
 - The `BoxStyle` is invalid
 - The `TitlePosition` is invalid
+- The `TitleAlign` or `ContentAlign` is invalid
 - The wrap limit is negative
 - Padding is negative
 - A multiline title is used with a non‑`Inside` title position

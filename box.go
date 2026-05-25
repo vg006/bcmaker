@@ -289,6 +289,8 @@ type boxLayout struct {
 func (b *Box) prepareContentLines(title, content string) ([]string, int, error) {
 	if b.titlePos == "" {
 		b.titlePos = Inside
+	} else if b.titlePos != Inside && b.titlePos != Top && b.titlePos != Bottom {
+		return nil, 0, fmt.Errorf("invalid TitlePosition %s", b.titlePos)
 	}
 
 	var contentLines []string
@@ -389,8 +391,6 @@ func (b *Box) buildAndColorBars(title string, lay boxLayout) (string, string, er
 				}
 				bottomBar = buildTitledBar(b.bottomLeft, b.horizontal, b.bottomRight, blw, brw, lay.lineWidth, lay.horizontalWidth, title, align)
 			}
-		default:
-			return "", "", fmt.Errorf("invalid TitlePosition %s", b.titlePos)
 		}
 	}
 

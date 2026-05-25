@@ -197,30 +197,17 @@ func (b *Box) formatLine(lines2 []expandedLine, longestLine, titleLen int, sideM
 		}
 
 		spacing := space + sideMargin
-		var format string
 
-		switch {
-		case i < titleLen && title != "" && b.titlePos == Inside:
-			align, err := b.findTitleAlign(Center)
-			if err != nil {
-				return nil, err
-			}
-			switch align {
-			case Center:
-				format = centerAlign
-			case Left:
-				format = leftAlign
-			case Right:
-				format = rightAlign
-			default:
-				return nil, fmt.Errorf("invalid Title Alignment %s", align)
-			}
-		default:
-			align, err := b.findAlign()
-			if err != nil {
-				return nil, err
-			}
-			format = align
+		var format string
+		var err error
+
+		if i < titleLen && title != "" && b.titlePos == Inside {
+			format, err = b.findTitleAlignFormat(Center)
+		} else {
+			format, err = b.findContentAlign()
+		}
+		if err != nil {
+			return nil, err
 		}
 
 		sep, err := applyColor(b.vertical, b.color)
@@ -234,7 +221,7 @@ func (b *Box) formatLine(lines2 []expandedLine, longestLine, titleLen int, sideM
 	return texts, nil
 }
 
-func (b *Box) findAlign() (string, error) {
+func (b *Box) findContentAlign() (string, error) {
 	switch b.contentAlign {
 	case Center:
 		return centerAlign, nil
@@ -256,6 +243,21 @@ func (b *Box) findTitleAlign(defaultAlign AlignType) (AlignType, error) {
 		return b.titleAlign, nil
 	default:
 		return "", fmt.Errorf("invalid Title Alignment %s", b.titleAlign)
+	}
+}
+
+func (b *Box) findTitleAlignFormat(defaultAlign AlignType) (string, error) {
+	align, err := b.findTitleAlign(defaultAlign)
+	if err != nil {
+		return "", err
+	}
+	switch align {
+	case Center:
+		return centerAlign, nil
+	case Left:
+		return leftAlign, nil
+	default:
+		return rightAlign, nil
 	}
 }
 
